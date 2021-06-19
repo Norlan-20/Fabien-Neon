@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: sample;
+    src: url(../font/moon_get-Heavy.ttf);
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Body full code */
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+body > div {
+    width: 50%;
+    color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
+/* ====================Body div code===================== */
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
+
+#first > div:first-child, #second > div:first-child {
+    font-family: sample;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+/* ====================================================== */
+/* ====================First div code===================== */
+/* ====================================================== */
+
+
+#first {
+    overflow-x: hidden;
+    box-shadow: 1px -1px 20px #222;
+    z-index: 1;
+}
+
+#first > div:first-child span {
+    font-size: 25vw;
+    position: relative;
+    right: -13.5vw;
+    color: greenyellow;
+    text-shadow: 1px 1px 30px greenyellow;
+}
+
+/* ====================================================== */
+/* ====================Second div code===================== */
+/* ====================================================== */
+
+#second > div:first-child {
+    align-items: flex-start;
+}
+
+#second > div:first-child #a2 {
+    font-size: 20vw;
+    position: relative;
+    left: -10.5vw;
+    color: white;
+    text-shadow: 1px 1px 30px white;
+}

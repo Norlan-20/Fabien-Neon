@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: sample;
+    src: url(../font/moon_get-Heavy.ttf);
+}
+
+@font-face {
+    font-family: sample1;
+    src: url(../font/ModernSans-Light.otf);
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Body full code */
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+body > div {
+    width: 50%;
+    color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    font-family: sample1,sans-serif;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
+/* ====================Body div code===================== */
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
+
+#first > div:first-child, #second > div:first-child {
+    font-family: sample;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+#first > div:last-child, #second > div:last-child  {
+    padding-left: 10px;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ====================================================== */
+/* ====================First div code===================== */
+/* ====================================================== */
+
+
+#first {
+    overflow-x: hidden;
+    box-shadow: 1px -1px 20px #222;
+    z-index: 1;
+}
+
+#first > div:first-child span {
+    font-size: 25vw;
+    position: relative;
+    right: -13.5vw;
+    color: greenyellow;
+    text-shadow: 1px 1px 30px greenyellow;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+a i {
+    margin-left: 1vw;
+}
+
+.reseau {
+    padding-left: 1vw;
+}
+
+/* ====================================================== */
+/* ====================Second div code===================== */
+/* ====================================================== */
+
+#second {
+    position: relative;
+}
+
+#second > div:first-child {
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+#second > div:first-child #a2 {
+    font-size: 20vw;
+    position: relative;
+    left: -10.5vw;
+    color: white;
+    text-shadow: 1px 1px 30px white;
+}
+
+#lastname {
+    font-size: 2vw;
+    padding-left: 0.4rem;
+    font-variant: small-caps;
+    font-family: sample1;
+}
+
+#firstname {
+    font-size: 2.2vw;
+    padding-left: 4vw;
+    font-variant: small-caps;
+    font-family: sample1,sans-serif;
+}
+
+.second {
+    width: 100% !important;
+    padding-right: 15px;
+}
+
+.second p {
+    width: 100%;
+    text-align: right;
+}
+
+#show {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #FFFFFF;
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    box-shadow: -1px 1px 10px #AAAAAA;
+}
+
+#show:hover {
+    transform: rotate(960deg);
+}
